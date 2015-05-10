@@ -16,7 +16,7 @@ function exportGroovesharkFavsToCsv(storageFullPath) {
           console.log(err);
         }
 
-        var csvFileName = 'groovesharkFavs' + index + '.csv';
+        var csvFileName = 'groovesharkFavs' + (index+1) + '.csv';
         fs.writeFile(csvFileName, csv, function(err) {
           if (err) {
             throw err;
